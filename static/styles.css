@@ -1,0 +1,122 @@
+nav {
+    background-color: #4A6655; /* Sage green */
+    padding: 10px 0;
+    position: fixed; /* Fix the nav bar to the top */
+    width: 100%; /* Span across the entire width */
+    top: 0; /* Align at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between nav items */
+}
+
+nav ul li a {
+    color: #fff; /* White for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px; /* Padding for clickable area */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #3C5444; /* Slightly darker sage green */
+    border-radius: 5px; /* Rounded edges for hover effect */
+}
+
+body {
+    margin: 0;
+    padding-top: 60px; /* Prevent content from overlapping nav bar */
+    background-color: #E6EAE3; /* Soft sage green background */
+    font-family: 'Arial', sans-serif;
+    color: #4F6457; /* Softer sage green for text */
+}
+
+/* Headings and Text Styles */
+h1, h2 {
+    color: #4A6655; /* Softer sage green for headings */
+    text-align: center;
+}
+
+p {
+    color: #4F6457; /* Softer sage green for paragraphs */
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    background-color: #F8F9F5; /* Lighter green for form background */
+    border: 2px solid #A9B7A5; /* Muted sage border */
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    color: #4F6457; /* Softer sage green for labels */
+    margin-bottom: 10px;
+    display: block;
+}
+
+input, textarea, button {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #A9B7A5;
+    border-radius: 4px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4A6655; /* Softer focus border */
+    box-shadow: 0px 0px 5px #4A6655;
+}
+
+button {
+    background-color: #4A6655;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3C5444; /* Slightly darker sage green for hover */
+}
+
+/* Link Styles */
+a {
+    color: #4A6655;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Flash Message Styles */
+.flash-message {
+    background-color: #F4E1D2; /* Muted peach for contrast */
+    color: #4F6457; /* Softer sage green for flash message text */
+    border-left: 5px solid #4A6655;
+    padding: 10px;
+    margin: 10px auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 4px;
+}

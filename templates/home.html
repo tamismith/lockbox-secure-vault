@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome to LockBox</h1>
+<p>Please choose an option:</p>
+<form action="/create-master-password" method="post">
+    <label for="password">Set Master Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Create Password</button>
+</form>
+<form action="/login" method="post">
+    <label for="password">Enter Master Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Login</button>
+</form>
+{% endblock %}

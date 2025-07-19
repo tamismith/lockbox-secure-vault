@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Create a 4-Digit PIN</h1>
+<form method="post">
+    <label for="pin">Enter 4-Digit PIN:</label>
+    <input type="text" id="pin" name="pin" maxlength="4" required>
+    <button type="submit">Set PIN</button>
+</form>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Saved Payment Details</h1>
+<form method="get">
+    <input type="text" name="query" placeholder="Search by cardholder name">
+    <button type="submit">Search</button>
+</form>
+<ul>
+    {% for payment in payments %}
+        <li>{{ payment }}</li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+
+{% endblock %}

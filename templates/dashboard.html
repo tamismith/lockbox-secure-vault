@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>LockBox Dashboard</h1>
+<p>Here you can manage your sensitive data.</p>
+
+
+
+<h2>Add Password</h2>
+<form action="/save-password" method="post">
+    <label for="password-tag">Password Tag:</label>
+    <input type="text" id="password-tag" name="password-tag" required>
+    <br>
+    <label for="new-password">Add Password:</label>
+    <input type="text" id="new-password" name="new-password" required>
+    <button type="submit">Save Password</button>
+</form>
+
+<h2>Add Note</h2>
+<form action="{{ url_for('save_note') }}" method="POST">
+    <label for="note-title">Note Title:</label>
+    <input type="text" id="note-title" name="note-title" required>
+    <br>
+    <label for="note-content">Note Content:</label>
+    <textarea id="note-content" name="note-content" required></textarea>
+    <br>
+    <button type="submit">Save Note</button>
+</form>
+
+
+<h2>Add Payment</h2>
+<form action="{{ url_for('save_payment') }}" method="POST">
+    <label for="card-number">Card Number:</label>
+    <input type="text" id="card-number" name="card-number" required>
+    <br>
+    <label for="cardholder-name">Cardholder Name:</label>
+    <input type="text" id="cardholder-name" name="cardholder-name" required>
+    <br>
+    <button type="submit">Save Payment</button>
+</form>
+
+{% endblock %}

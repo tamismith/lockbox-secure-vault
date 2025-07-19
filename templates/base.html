@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LockBox</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>LockBox</h1>
+        <hr>
+    </header>
+    
+    {% if request.endpoint != 'home' %}
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('view_passwords') }}">Passwords</a></li>
+            <li><a href="{{ url_for('view_notes') }}">Notes</a></li>
+            <li><a href="{{ url_for('view_payments') }}">Payments</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        </ul>
+    </nav>
+    {% endif %}
+    
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    
+    <footer>
+        <hr>
+        <p>&copy; 2025 LockBox</p>
+    </footer>
+</body>
+</html>
