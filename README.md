@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🔐 LockBox – Secure Personal Information Vault
 
 LockBox is a secure, user-friendly digital vault for storing sensitive personal data like passwords, payment info, notes, and PINs. It uses AES encryption and layered authentication to ensure data privacy and protection.
@@ -23,4 +23,5 @@ LockBox is a secure, user-friendly digital vault for storing sensitive personal 
 
 
 
->>>>>>> acacb1b (Resolve merge conflicts)
+
+
